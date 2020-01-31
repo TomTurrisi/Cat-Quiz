@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" id="Quiz App">
+
+<html>
+ 
+<head>
+	<meta charset="utf-8">
+	<title>Quiz App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" type="A Quiz About Cats!">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<h1>Cat Quiz!</h1>
+    <div class="start-quiz">
+      <p class="top-description">Let us see if you know anything about cats!</p>
+      <p class="bottom-description">Click the button to start the quiz!</p>
+      <button type="button" class='start-button'>Start Quiz!</button>
+      <div class="sarahcat">
+        <img src="photos/sarahcat.png" alt="sarahcat"/>
+      </div>
+    </div>
+  </header>
+  <main>
+      <div class="questions">
+        <h2 class='question'></h2>
+          <p class="score"> Curent Score: </p>
+          <ul class="list"></ul>
+          <div class="submit">
+            <button class="submit-button">Check Answer</button>
+          </div>
+              <div class="next">
+                <button class="next-button">Next</button>
+                <p class="question-number"></p>
+              </div>
+        </div>
+  </main>
+    <footer>
+      <div class="end-quiz">
+        <p class="end-score"></p>
+        <p class="status"></p>
+        <button class="retake-button">Retake Quiz!</button>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="store.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
