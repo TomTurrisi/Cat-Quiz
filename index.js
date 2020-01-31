@@ -76,7 +76,7 @@ $(document).ready(function(){
   function displayScore(){
     $('.questions').hide();
     $('.end-quiz').show();
-    $('.end-score').text("Your score is: " +score + '/10');
+    $('.end-score').text("Your score is: " +score + '/11');
     if(score >= 8){
       $('.status').text('Good Job!');
     }
