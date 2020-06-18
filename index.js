@@ -36,15 +36,19 @@ $(document).ready(function(){
     
     //Click listener when clicking on a list item to change the color of the background
     $('ul.list').on('click', 'li', function(event) {
-      $('.selected').removeClass();
-      $(this).addClass('selected');
+      // let buttonName = $(".submit-button").text().trim();
+      let stillAnswering = $(".submit-button:visible").length;
+        if(stillAnswering) {
+          $('.selected').removeClass();
+          $(this).addClass('selected');
+      }
     });
     
   });
   
   //Functions
   function displayQuestion(){
-    $('.question-number').text('Question Number: '+(current + 1)+"/10" );
+    $('.question-number').text('Question Number: '+(current + 1)+"/" + myQuestions.length );
     if(current < myQuestions.length){
       var listQuestion = myQuestions[current];
       $('h2').text(listQuestion.question);
@@ -68,7 +72,7 @@ $(document).ready(function(){
       $('li.selected').addClass('incorrect');
       $('listQuestion.correct').addClass('correct');
     }
-    $('.score').text('Current Score: '+score);
+    $('.score').text('Current Score: '+score +"/" + myQuestions.length);
     current++;
   }
   
@@ -76,7 +80,7 @@ $(document).ready(function(){
   function displayScore(){
     $('.questions').hide();
     $('.end-quiz').show();
-    $('.end-score').text("Your score is: " +score + '/11');
+    $('.end-score').text("Your score is: " +score +"/" + myQuestions.length);
     if(score >= 8){
       $('.status').text('Good Job!');
     }
