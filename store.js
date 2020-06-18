@@ -27,7 +27,7 @@ const myQuestions = [
       //Question3
       question: "The heaviest known cat weighed nearly how many pounds?",
       answers:[
-       "25 Pounds",
+        "25 Pounds",
         "35 Pounds",
         "60 Pounds",
         "50 Pounds",
@@ -87,7 +87,7 @@ const myQuestions = [
       //Question8
       question: "Do cats dream like humans?",
       answers: [
-        "Ture",
+        "True",
         "False",
       ],
       correctAnswer:
@@ -101,7 +101,7 @@ const myQuestions = [
         "False",
       ],
       correctAnswer:
-        "Ture"
+        "True"
     },
     {
       //Question10
@@ -130,4 +130,3 @@ const myQuestions = [
   //variables to store the quiz score and question number information
   var score = 0;
   var current = 0;
-  
